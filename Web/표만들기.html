@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>표만들기 연습</title>
+    </head>
+    <body>
+        <h1>인생 영화..!</h1>
+        <p>인생 짧고, 영화는 많다..! 홍팍이의 인생 영화를 소개해볼까 한다..!</p>
+        <!-- 3개의 영화 사진을 주소에 입력한다. 아래 2개의 사진은 같은 사이즈로 한다. -->
+
+        <img src="https://pds.joins.com/news/component/htmlphoto_mmdata/201911/10/htm_2019111016135789072.jpg" width="56.5%" />
+        <br>
+        <img src="http://www.ctimes.co.kr/news/photo/201907/1155_1101_2146.jpg" width="28%" />
+        <img src="https://image.ajunews.com/content/image/2020/03/03/20200303180110229076.jpg" width="28%" height = "293px" />
+    
+        <!-- 표 -->
+        <table width = "850px" border="1">
+          <!-- 표머리: 제목부분은 thead로 묶어준다. -->
+          <thead>
+            <tr>
+              <th>제목</th>
+              <th>평점</th>
+              <th>장르</th>
+              <th>내용</th>
+            </tr>
+          </thead>
+          <!-- 표몸통: 몸통(데이터) 부분은 tbody로 묶는다. -->
+          <!-- 사진과 일치하는 영화 설명을 적는다. -->
+          <tbody>
+            <tr>
+              <td>기생충</td>
+              <td>4.94</td>
+              <td>성장</td>
+              <td>즐거운 가족 이야기</td>
+            </tr>
+            <tr>
+              <td>극한직업</td>
+              <td>3.94</td>
+              <td>성장</td>
+              <td>즐거운 경찰 이야기</td>
+
+            </tr>
+            <tr>
+              <td>해운대</td>
+              <td>2.94</td>
+              <td>성장</td>
+              <td>즐거운 재난 이야기</td>
+
+            </tr>
+          </tbody>
+        </table>
+    </body>
+</html>
