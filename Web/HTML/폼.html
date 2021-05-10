@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 태그, input 태그</title>
+</head>
+
+<body>
+    <form action="">
+        <!-- 일반 텍스트 입력-->
+        <div>
+            <label>이름</label>
+            <input type="text" autofocus required>
+
+        </div>
+        <!-- 비밀번호 입력-->
+        <div>
+            <label>비밀번호</label>
+            <input type="password" placeholder="비밀번호를 입력하세요" minlength="4" maxlength="7">
+
+        </div>
+
+        <!-- 이메일 입력-->
+        <div>
+            <label>이메일</label>
+            <input type="email" placeholder="이메일을 입력하세요">
+
+        </div>
+
+        <!-- 장문의 글 입력 Textarea-->
+        <div>
+            <label>메세지</label>
+            <textarea cols="30" rows="5"></textarea>
+        </div>
+
+
+        <!-- 선택 입력 : Select / Option-->
+        <div>
+            <label>성별</label>
+            <select>
+                <option value="남성">남성</option>
+                <option value="여성">여성</option>
+                <option value="중성">중성</option>
+            </select>
+        </div>
+
+        <!-- 숫자입력 : number -->
+        <div>
+            <label>나이</label>
+            <input type="number">
+
+        </div>
+        <!-- 날짜 입력  r -->
+        <div>
+            <label>생년월일 </label>
+            <input type="date">
+
+        </div>
+        <!-- 여러개중 하나를 선택 : radio 타입 -->
+        <div>
+            <label>멤버쉽</label>
+            <input type="radio" name = "membership" checked>심플
+            <input type="radio" name = "membership">스탠다드
+            <input type="radio" name = "membership">슈퍼
+
+        </div>
+
+          <!-- 여러개중 다중 선택 : checkbox 타입 -->
+          <div>
+            <label>구매내역</label>
+            <input type="checkbox" name = "like1">오토바이
+            <input type="checkbox" name = "like2">자동차
+            <input type="checkbox" name = "like3">보트
+
+        </div>
+        <!-- 서버로 전송 버튼(submit) 만들기  -->
+        <button type="submit"> 전송 </button>
+        <button type="reset"> 리셋 </button>
+    </form>
+</body>
+
+</html>
