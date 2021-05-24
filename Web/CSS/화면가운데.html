@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화면가운데</title>
+    <style>
+          .box{
+            width: 200px;
+            height: 50px;
+            border: 5px solid blueviolet;
+        }
+        .center1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            /* 여기까지 하면 박스 왼쪽 윗부분이 가운데에 위치 */
+            /* 박스 크기의 절반만큼 - 마진 넣으니 박스 중심이 가운데로 위치  */
+            margin-top: -25px;
+            margin-left:-100px;
+        }
+        .center2{
+            position: absolute;
+            top: 50%;
+            left: 50%; 
+            /* 위의 식처럼 나누기 하지말고 화면가운데 넣기 */
+           transform: translate(-50%,-50%);
+        }
+
+
+        /* 글자 가운데 세팅 */
+        .flex{
+            display: flex;
+
+            /* 가로 정렬 */
+            justify-content: center;
+
+             /*세로 정렬   */
+            align-items: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box center2 flex" >정중앙으로</div>
+</body>
+</html>

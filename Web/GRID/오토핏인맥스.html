@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오토핏 인맥스</title>
+<style>
+.item{
+    /* rem = 16px */
+    padding: 3rem;
+    border: 2px solid rgb(161, 23, 23);
+    background-color: #f4f4f4;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.grid{
+    /*  그리드 사용 시작 */ 
+
+display: grid;
+
+/* 그리드 템플릿 컬럼 (가로 아이템의 길이 ) 설정 */
+/* grid-template-columns: 200px 200px; */
+/* grid-template-columns: 25% 25% 25% 25%  ; */
+/* grid-template-columns: 200px auto 200px; */
+/* grid-template-columns: 1fr 1fr 1fr 1fr; */
+
+/* 리핏(횟수,컬럼길이) */
+/* 오토핏: 화면 크기에 맞춰서 자동, minmax(최소,최대) */
+
+/* 화면 크기에 200px 만큼 자리 날 때 마다 칸이 하나씩 들어간다. */
+grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+
+/* 갭 만들기 (margin) */
+
+gap: 15px;
+
+/* 그리드 템플릿 로우 (세로 줄의 길이) 설정 */
+
+/* grid-template-rows: 1fr 2fr 3fr; */
+
+grid-template-:  ;
+}
+
+
+
+</style>
+
+
+</head>
+<body>
+    <div class="grid">
+<div class="item">Item 1</div>
+<div class="item">Item 2</div>
+<div class="item">Item 3</div>
+<div class="item">Item 4</div>
+<div class="item">Item 5</div>
+<div class="item">Item 6</div>
+<div class="item">Item 7</div>
+<div class="item">Item 8</div>
+<div class="item">Item 9</div>
+<div class="item">Item 10</div>
+<div class="item">Item 11</div>
+<div class="item">Item 12</div>
+<div class="item">Item 13</div>
+<div class="item">Item 14</div>
+<div class="item">Item 15</div>
+
+</div>
+  
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경</title>
+    <style>
+          body{
+              /* 여백을 초기화 */
+              padding: 0%;
+              margin: 0%;
+      
+    }
+    .bg1{
+        background:url(bg1.jpg) center center no-repeat ;
+        background-size: cover;
+        height: 100vh; /*화면의 100퍼센트 높이 */
+        
+        
+            display: flex;
+
+            /* 가로 정렬 */
+            justify-content: center;
+
+             /*세로 정렬   */
+            align-items: center;
+    }
+    .bg2{
+        background:url(bg2.jpg) center center no-repeat ;
+        background-size: cover;
+        height: 100vh;
+    }
+    .bg3{
+        background: linear-gradient( 45deg,/*to left,*/ black,red,yellow,green,blue,white);
+        
+        height: 100vh;
+    }
+
+    .center{
+        width: 300px;
+            height: 50px;
+            color: white;
+            background-color: sienna;
+            border: 5px solid white;
+            font-size:200%;
+            
+
+    }
+    </style>
+</head>
+<body>
+  <div class="bg1">
+      <div class="center">상자 가운데 만들기 </div>
+    
+</div>
+  <div class="bg2"> </div>
+  <div class="bg3"> </div>
+
+</body>
+</html>

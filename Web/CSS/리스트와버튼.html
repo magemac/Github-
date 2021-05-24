@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리스트와 버튼</title>
+    <style>
+.myList{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* 이렇게 설정해도 마진이 있어보임,  바디태그의 마진때문임 */
+}
+.myList li{
+    padding: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #efefef;
+}
+ol.myList li:last-child{
+    /* 맨 밑 선 none */
+    border-bottom: none;;
+}
+.myList li:first-child{
+    /* 첫번째 줄  */
+    color:skyblue;
+}
+.myList li:nth-child(2){
+    /* 두번째줄 */
+    color: violet;
+}
+
+/* 버튼스타일 */
+.btn{
+    /* 버튼의 사이즈 */
+    padding: 15px 30px;
+    /* 버튼의 모서리를 둥글게 */
+    border-radius: 5px;
+    color:white;
+
+}
+.btn1{
+    background-color: red;
+    border: 1px solid red;
+}
+.btn2{
+    background-color: blue;
+    border: 1px solid blue;
+}
+.btn3{
+    background-color: green;
+    border: 1px solid green;
+}
+    </style>
+</head>
+<body>
+    <!-- 리스트 -->
+    <ul class="myList">
+        <li>순서없는 목록의 아이템1</li>
+        <li>순서없는 목록의 아이템2</li>
+        <li>순서없는 목록의 아이템3</li>
+    </ul>
+
+
+    <ol class="myList">
+        <li>순서있는 목록의 아이템1</li>
+        <li>순서있는 목록의 아이템2</li>
+        <li>순서있는 목록의 아이템3</li>
+    </ol>
+<!-- 버튼 -->
+
+
+<button  class="btn btn1">버튼1</button>
+<button  class="btn btn2">버튼2</button>
+<button  class="btn btn3">버튼3</button>
+</body>
+</html>

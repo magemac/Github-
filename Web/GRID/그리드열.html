@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그리드 열(가로) 설정</title>
+<style>
+.item{
+    /* rem = 16px */
+    padding: 3rem;
+    border: 2px solid rgb(161, 23, 23);
+    background-color: #f4f4f4;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.grid{
+    /*  그리드 사용 시작 */ 
+
+display: grid;
+
+/* 그리드 템플릿 컬럼 (가로 아이템의 길이 ) 설정 */
+/* grid-template-columns: 200px 200px; */
+/* grid-template-columns: 25% 25% 25% 25%  ; */
+/* grid-template-columns: 200px auto 200px; */
+grid-template-columns: 1fr 1fr;
+
+
+
+/* 갭 만들기 (margin) */
+
+gap: 15px;
+
+/* 그리드 템플릿 로우 (세로 줄의 길이) 설정 */
+
+grid-template-rows: 1fr 2fr 3fr;
+
+
+}
+
+
+main{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-top: 50px;
+}
+
+
+</style>
+
+
+</head>
+<body>
+    <div class="grid">
+<div class="item">Item 1</div>
+<div class="item">Item 2</div>
+<div class="item">Item 3</div>
+<div class="item">Item 4</div>
+<div class="item">Item 5</div>
+<div class="item">Item 6</div>
+
+    </div>
+    <main>
+<section>
+<h3>환영합니다 </h3>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    Excepturi saepe, nostrum necessitatibus accusantium voluptate, incidunt rerum
+    fugit ducimus facere iste dicta velit voluptatem omnis, eos odit iusto.
+    Quibusdam, voluptatibus minima.</p>
+</section>
+<aside>
+<h3>광고글</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, repudiandae?</p>
+</aside>
+    </main>
+    
+</body>
+</html>

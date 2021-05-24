@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포지션</title>
+</head>
+<style>
+    .container{
+        width: 600px;
+        margin: 0,auto;
+        height: 300px;
+        position: relative;
+        border: 2px solid gray;
+
+    }
+
+    .box{
+        width: 100px;
+        height : 100px;
+    }
+    .red{
+        background:tomato;
+    }
+     .green{
+        background:yellowgreen;
+    }
+    .blue{
+        background:skyblue;
+    }
+    .relative{/*본인기준으로 이동*/
+        position: relative;
+        top:115px;
+        left:125px;
+    }
+    .absolute{
+        position:absolute;
+        bottom: 0px;
+       right:0px;
+
+    }
+    .fixed{ /* 위는 컨테이너 안 픽스드는 컨테이너 밖 고정좌표*/
+        background:violet;
+        position:fixed;
+        bottom:20px;
+        right: 20px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box red relative"></div>
+        <div class="box green absolute "></div>
+        <div class="box blue fixed"></div>
+    </div>
+
+
+</body>
+</html>
