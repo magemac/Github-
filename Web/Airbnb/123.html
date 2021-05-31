@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <td width="80" class="txt_line"><!-- PC방 배너 -->
+        <style type="text/css">
+        <!--
+        body, p, tr, td, div, table {
+            font-family:"Verdana","Dotum", "DotumChe", "Arial"; color:#8c867a; font-size:11px; line-height:120%;
+        }
+        -->
+        
+        
+        .txt_red_b{ 
+        font-family:"Dotum", "DotumChe";
+        color: #950000;
+        font-size:11px;
+        font-weight:bold;
+        }
+        
+        
+        .txt_blue_b{ 
+        font-family:"Dotum", "DotumChe";
+        color: #1d3d97;
+        font-size:11px;
+        font-weight:bold;
+        }
+        
+        
+        .txt_black{ 
+        font-family:"Dotum", "DotumChe";
+        color: #373737;
+        font-size:11px;
+        }
+        
+        
+        .textbox_item {
+            font-family: "Dotum", "굴림";
+            font-size: 12px;
+            color:#848484;
+            background-color: #f3f3f3;
+            border:1px solid #dddddd;
+            text-align:center;
+            height:100px;
+            padding:4px;
+        }
+        
+        </style>
+        <div style="position:relative;">
+            <div style="position:absolute; left:-889px; top:107px; z-index:2;">
+                <table width="24" border="0" cellspacing="0" cellpadding="0" onMouseOver="showLayerPcbang()" onMouseOut="hideLayerPcbang()">
+                    <tr>
+                        <td height="70" align="center"><img src="/image/event/pcbang/pc_banner_bg.gif" /></td>
+                    </tr>
+                    <tr>
+                        <td><img src="/image/event/pcbang/pc_banner_off.gif" id="IDpcbangBanner" /></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div style="position:relative;">
+            <div style="position:absolute; left:-865px; top:107px; z-index:2; display:none" id="IDpcbang">
+                <table width="597" border="0" cellspacing="0" cellpadding="0" onMouseOver="showLayerPcbang()" onMouseOut="hideLayerPcbang()">
+                    <tr>
+                        <td><img src="/image/event/pcbang/pop_top.gif" /></td>
+                    </tr>
+                    <tr>
+                        <td align="center" background="/image/event/pcbang/pop_bg.gif" style="background-repeat:repeat-y;">
+                            <table border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td height="40" align="center" valign="top">
+                                        PC방에서 1시간 동안 플레이 하실 때 마다 1개의 <u><b>PC방 선물상자(거래불가)</b></u>가 지급됩니다.<br />
+                                        (주의! 연속 1시간 접속 유지 시 아이템이 지급됩니다. 로그아웃 시 접속시간은 초기화되어 계산됩니다,)							
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="20" align="center" valign="top">
+                                        <u><font class="txt_blue_b">‘PC방 선물상자(거래불가)’</font></u> 우클릭을 통해 아래 아이템 중 한 개의 아이템을 획득하실 수 있습니다.							
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table width="520" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td height="220" valign="top">
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td>
+                                                                <!-- Item line_1 Start -->
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <!-- Item box Start -->
+                                                                            <table width="98" border="0" cellspacing="0" cellpadding="0">
+                                                                                <tr>
+                                                                                    <td valign="top" class="textbox_item">
+                                                                                        <table width="90" border="0" cellspacing="0" cellpadding="0">
+                                                                                            <tr>
+                                                                                                <td><img src="/image/event/pcbang/pc_item01.gif" /></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td height="30" align="center" style="line-height:130%">반계탕<br />
+                                                                                                    (거래불가)</td>
+                                                                                            </tr>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                            <!-- Item box End -->
+                                                                        </td>
+                                                                         <td align="center">
+                                                                            <!-- Item box Start -->
+                                                                            <table width="98" border="0" cellspacing="0" cellpadding="0">
+                                                                                <tr>
+                                                                                    <td valign="top" class="textbox_item">
+                                                                                        <table width="90" border="0" cellspacing="0" cellpadding="0">
+                                                                                            <tr>
+                                                                                                <td><img src="/image/event/pcbang/pc_item02.gif" /></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td height="30" align="center" style="line-height:130%">식량</td>
+                                                                                            </tr>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                            <!-- Item box End -->
+                                                                        </td>
+                                                                         <td align="center">
+                                                                            <!-- Item box Start -->
+                                                                            <table width="98" border="0" cellspacing="0" cellpadding="0">
+                                                                                <tr>
+                                                                                    <td valign="top" class="textbox_item">
+                                                                                        <table width="90" border="0" cellspacing="0" cellpadding="0">
+                                                                                            <tr>
+                                                                                                <td><img src="/image/event/pcbang/pc_item03.gif" /></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td height="30" align="center" style="line-height:130%">사통팔달<br />
+                                                                                                    (거래불가)</td>
+                                                                                            </tr>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                            <!-- Item box End -->
+                                                                        </td>
+                                                                         <td align="center">
+                                                                            <!-- Item box Start -->
+                                                                            <table width="98" border="0" cellspacing="0" cellpadding="0">
+                                                                                <tr>
+                                                                                    <td valign="top" class="textbox_item">
+                                                                                        <table width="90" border="0" cellspacing="0" cellpadding="0">
+                                                                                            <tr>
+                                                                                                <td><img src="/image/event/pcbang/pc_item04.gif" /></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td height="30" align="center" style="line-height:130%">천하장사-힘<br />
+                                                                                                    (거래불가)</td>
+                                                                                            </tr>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                            <!-- Item box End -->
+                                                                        </td>
+                                                                         <td align="right">
+                                                                            <!-- Item box Start -->
+                                                                            <table width="98" border="0" cellspacing="0" cellpadding="0">
+                                                                                <tr>
+                                                                                    <td valign="top" class="textbox_item">
+                                                                                        <table width="90" border="0" cellspacing="0" cellpadding="0">
+                                                                                            <tr>
+                                                                                                <td><img src="/image/event/pcbang/pc_item05.gif" /></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td height="30" align="center" style="line-height:130%">마력단약-1일<br />
+                                                                                                    (거래불가)</td>
+                                                                                            </tr>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                            <!-- Item box End -->                                        
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <!-- Item line_1 End -->
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="112">
+                                                                <!-- Item line_2 Start -->
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tr>
+                                                                         <td>
+                                                                            <!-- Item box Start -->
+                                                                            <table width="98" border="0" cellspacing="0" cellpadding="0">
+                                                                                <tr>
+                                                                                    <td valign="top" class="textbox_item">
+                                                                                        <table width="90" border="0" cellspacing="0" cellpadding="0">
+                                                                                            <tr>
+                                                                                                <td><img src="/image/event/pcbang/pc_item06.gif" /></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td height="30" align="center" style="line-height:130%">신선단약-1일<br />
+                                                                                                    (거래불가)</td>
+                                                                                            </tr>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                            <!-- Item box End -->
+                                                                        </td>
+                                                                         <td align="center">
+                                                                            <!-- Item box Start -->
+                                                                            <table width="98" border="0" cellspacing="0" cellpadding="0">
+                                                                                <tr>
+                                                                                    <td valign="top" class="textbox_item">
+                                                                                        <table width="90" border="0" cellspacing="0" cellpadding="0">
+                                                                                            <tr>
+                                                                                                <td><img src="/image/event/pcbang/pc_item07.gif" /></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td height="30" align="center" style="line-height:130%">일취월장-1일<br />
+                                                                                                    (거래불가)</td>
+                                                                                            </tr>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                            <!-- Item box End -->                                        
+                                                                        </td>
+                                                                         <td align="center">
+                                                                            <!-- Item box Start -->
+                                                                            <table width="98" border="0" cellspacing="0" cellpadding="0">
+                                                                                <tr>
+                                                                                    <td valign="top" class="textbox_item">
+                                                                                        <table width="90" border="0" cellspacing="0" cellpadding="0">
+                                                                                            <tr>
+                                                                                                <td><img src="/image/event/pcbang/pc_item08.gif" /></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td height="30" align="center" style="line-height:130%">일사천리-1일<br />
+        (거래불가)</td>
+                                                                                            </tr>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                            <!-- Item box End -->                                       
+                                                                         </td>
+                                                                         <td align="center">
+                                                                            <!-- Item box Start -->
+                                                                            <table width="98" border="0" cellspacing="0" cellpadding="0">
+                                                                                <tr>
+                                                                                    <td valign="top" class="textbox_item">
+                                                                                        <table width="90" border="0" cellspacing="0" cellpadding="0">
+                                                                                            <tr>
+                                                                                                <td><img src="/image/event/pcbang/pc_item09.gif" /></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td height="30" align="center" style="line-height:130%">다다익선-1일<br />
+        (거래불가) </td>
+                                                                                            </tr>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                            <!-- Item box End -->                                        
+                                                                         </td>
+                                                                         <td align="right">
+                                                                            <!-- Item box Start -->
+                                                                            <table width="98" border="0" cellspacing="0" cellpadding="0">
+                                                                                <tr>
+                                                                                    <td valign="top" class="textbox_item">
+                                                                                        <table width="90" border="0" cellspacing="0" cellpadding="0">
+                                                                                            <tr>
+                                                                                                <td><img src="/image/event/pcbang/pc_item10.gif" /></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td height="30" align="center" style="line-height:130%">1억 지전</td>
+                                                                                            </tr>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                            <!-- Item box End -->                                        
+                                                                         </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <!-- Item line_2 End -->
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center"><a href="http://www.playwithzone.com/Support.YNK/PcroomSearch" target="_blank"><img src="/image/event/pcbang/btn_find.gif" /></a><span id="IDpcbangApply"></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-top:10px" align="center"><b>플레이위드존 유료가맹점에서만 혜택을 받으실 수 있습니다</b></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="/image/event/pcbang/pop_bottom.gif" /></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script language="JavaScript">
+        <!--
+            function showLayerPcbang() {
+                document.getElementById("IDpcbang").style.display = "block";	
+                document.getElementById("evenmain").style.display = "none";		
+            }
+        
+            function hideLayerPcbang() {
+                document.getElementById("IDpcbang").style.display = "none";
+                document.getElementById("evenmain").style.display = "block";
+            }
+        
+            function popPcbangApply() {
+                window.open("http://www.playwithzone.com/product.YNK/pcroomrequest?c=gs","","width=630,height=430");
+            }
+        
+            function pcbangCheck(){    	
+                $.ajax({
+                    type: "Get",
+                    url: "https://www.playwithzone.com/service.ynk/gamebillcheck",
+                    data: "c=gs",
+                    dataType :"jsonp",
+                    jsonp: false,
+                    jsonpCallback: "PLAYWITHZONE",
+                    success: function(data) {
+                        if (data.result=="Y") {
+                            document.getElementById("IDpcbangBanner").src = "/image/event/pcbang/pc_banner_on.gif";
+                        } else {
+                            document.getElementById("IDpcbangApply").innerHTML = "&nbsp;<img src='/image/event/pcbang/btn_apply.gif' style='cursor:pointer' onClick='popPcbangApply()' />";
+                        }
+                    }
+                });  
+            }
+        
+            pcbangCheck();
+        //-->
+        </script>
+        <!-- PC방 배너 -->
+        
+        
+        
+        
+        
+        <!-- 팝업 레이어 시작-->
+        <!--
+        상품 링크 : onclick="popOpenBuy(208,0)"
+        상점 링크 : onclick="javascript:location.href='http://www.gersang.co.kr/pub/mall/main/main.gs'"
+        맵 이용시 이미지 : <td><img src="/image/event/210226/20210226_pop.jpg" usemap="#MapPop"></td>
+        -->
+        <!-- 팝업내릴때 여기부터 주석 -->
+        <!-- -->
+        
+        <!-- -->
+        <map name="MapPop" id="MapPop">
+        
+            <area shape="rect" coords="216,298,399,330" href="javascript:PopEvent_Use();" style="cursor:pointer;"/>
+        <!--
+            <area shape="rect" coords="326,201,525,248" href="http://www.gersang.co.kr/pub/mall/main/main.gs" />
+            <area shape="rect" coords="216,298,399,330" href="javascript:PopEvent_Use();" style="cursor:pointer;"/>
+            <area shape="rect" coords="672,14,790,38" href="javascript:closeWinPopMain('210226',1)" />
+        -->
+        </map>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쇼핑리스트</title>
+    <style>
+        .cool:hover {
+  color: #0a0a0a;
+  text-shadow: 
+    /* Color 1 */
+    1px 1px #61b4de,
+    /* Color 2 */
+    2px 2px #91c467,
+    /* Color 3 */
+    3px 3px #f3a14b,
+    /* Color 4 */
+    4px 4px #e84c50,
+    /* Color 5 */
+    5px 5px #4e5965;
+}
+.cool {
+  color: #ededed;
+  font-family: Oswald;
+  font-size: 4em;
+  transition: 0.5s all ease;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: 
+    /* Color 1 */
+    1px 1px #61b4de, 2px 2px #61b4de, 3px 3px #61b4de, 4px 4px #61b4de, 5px 5px #61b4de,
+    /* Color 2 */
+    6px 6px #91c467, 7px 7px #91c467, 8px 8px #91c467, 9px 9px #91c467, 10px 10px #91c467,
+    /* Color 3 */
+    11px 11px #f3a14b, 12px 12px #f3a14b, 13px 13px #f3a14b, 14px 14px #f3a14b, 15px 15px #f3a14b,
+    /* Color 4 */
+    16px 16px #e84c50, 17px 17px #e84c50, 18px 18px #e84c50, 19px 19px #e84c50, 20px 20px #e84c50,
+    /* Color 5 */
+    21px 21px #4e5965, 22px 22px #4e5965, 23px 23px #4e5965, 24px 24px #4e5965, 25px 25px #4e5965;
+}
+
+    </style>
+</head>
+<body>
+    <h1>쇼핑 리스트</h1>
+    <p id="first">오늘 끝내자</p>
+    <p class="second">반드시!</p>
+    <button>클릭</button>
+    <ul>
+      <li random="23">노트북</li>
+      <li>가방</li>
+      <li>책</li>
+      <li>연습장</li>
+      <li>볼펜</li>
+      <li>지우개</li>
+    </ul>
+    <script>
+//id로 선택할 때
+document.getElementById('first');
+// 그 외 태그 및 클래스 등 단수 복수 선택(쿼리 셀럭터는 css 선택자와 같다.)
+document.querySelector('.second'); // 클래스 선택
+document.querySelector('h1'); //제목 태그 선택
+var h1 = document.querySelector('h1');
+
+// 여러개 선택
+document.querySelectorAll('li');
+
+document.querySelectorAll('li')[1];
+
+
+//태그의 속성 set/get
+var li = document.querySelector('li');//li 태그 변수로 저장 
+li.getAttribute('random');      //랜덤 속성 값 불러오기 
+li.setAttribute('random',1000); //랜덤 속성 수정
+
+//css 속성바꾸기 
+h1.style.color = 'red' //제목의 글자색을 빨간색으로
+//클래스 css속성 바꾸기
+h1.classList.add('cool'); //쿨 클래스 추가
+h1.classList.remove('cool'); //쿨 클래스 제거 
+h1.classList.toggle('cool'); // 쿨 클래스 추가 제거 반복 (토글)
+
+//이벤트 : addEventListener('이벤트 종류',함수)
+//이벤트가 일어났을 경우 뒤의 함수를 실행한다
+
+// 키보드 이벤트
+// 이벤트명	발생하는 시점
+// keydown	키가 눌렸을 때
+// keypress	쉬프트, Fn, CapsLock 을 제외한 키가 눌린 상태일 때(연속적으로 실행됨.).
+// keyup	키 누름이 해제될 때
+
+// 마우스 이벤트
+// 이벤트명	발생하는 시점
+// mouseenter	포인팅 장치가 리스너가 등록된 엘리먼트 위로 이동했을 때.
+// mouseover	포인팅 장치가 리스너가 등록된 엘리먼트나 그 자식 엘리먼트의 위로 이동했을 때.
+// mousemove	포인팅 장치가 엘리먼트 위에서 이동했을 때(마우스가 이동하는동안 계속 실행됨.)
+// mousedown	포인팅 장치 버튼이 엘리먼트 위에서 눌렸을 때.
+// mouseup	포인팅 장치 버튼이 엘리먼트 위에서 놓였을 때.
+// auxclick	포인팅 장치 버튼(주가 아닌 버튼)이 엘리먼트에서 눌렸다가 놓였을 때.
+// click	포인팅 장치 버튼(모든 버튼; 주 버튼만 해당될 예정)이 엘리먼트에서 눌렸다가 놓였을 때.
+// dblclick	포인팅 장치 버튼이 엘리먼트에서 두 번 클릭되었을 때.
+// contextmenu	마우스의 오른쪽 버튼이 클릭되었을 때(컨텍스트 메뉴가 표시되기 전).
+// wheel	포인팅 장치의 휠 버튼이 어떤 방향이든 회전되었을 때.
+// mouseleave	포인팅 장치가 리스너가 등록된 엘리먼트 밖으로 이동했을 때.
+// mouseout	포인팅 장치가 리스너가 등록된 엘리먼트 또는 그 자식 엘리먼트의 밖으로 이동했을 때.
+// select	어떤 텍스트가 선택되고 있을 때.
+// pointerlockchange	포인터가 잠겼거나 해제되었을 때.
+// pointerlockerror	기술적인 이유나 권한 거절을 이유로 포인터 잠금이 불가했을 때.
+
+var button = document.querySelector('button')
+button.addEventListener('click',function(){
+  console.log('클릭했음!');
+  h1.classList.toggle('cool');
+})
+    </script>
+</body>
+</html>

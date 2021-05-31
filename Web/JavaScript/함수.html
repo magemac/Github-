@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수</title>
+    <link rel="shorcut icon" href="#" type="image/x-icon">
+</head>
+<body>
+    <script>
+//함수의 선언
+
+function printTen(){
+    alert(10);
+}
+function plusTen(x){
+    return x+10;
+
+}
+
+function calRemainLife(x){
+    var day = (90-x)*365;
+    var week= (90-x)*52;
+    var month = (90-x)*12;
+  
+return day + "일," + week + "주,"+month+"달 남았습니다";
+}
+// 익명함수 - 함수의 이름이 없음 
+var plusTenInput = function(){
+var num =prompt('숫자를 입력해 주세요','0');
+ return Number(num)+10;
+}
+
+//함수의 호출 
+//printTen();
+    </script>
+    
+</body>
+</html>
