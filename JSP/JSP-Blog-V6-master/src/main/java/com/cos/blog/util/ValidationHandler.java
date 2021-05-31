@@ -18,8 +18,9 @@ public class ValidationHandler {
 		// 키 공백인 것 검증
 		while (e.hasMoreElements()) {
 			String key = e.nextElement();
-
-			if (request.getParameter(key).equals("")) {
+			System.out.println("key : "+key);
+			String value = request.getParameter(key);
+			if (value.equals("") && !value.equals("files")) {
 				System.out.println(key + "값이 공백입니다");
 				return -1;
 			}

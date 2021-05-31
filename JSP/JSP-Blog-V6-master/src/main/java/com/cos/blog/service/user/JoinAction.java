@@ -1,7 +1,6 @@
 package com.cos.blog.service.user;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.Arrays;
 import java.util.List;
 
@@ -47,7 +46,7 @@ public class JoinAction implements Action{
 		
 		// 3. DAO 연결해서 save() 하기
 		// 4. result  받아야 함.
-		UserDAO userDAO = new UserDAO();
+		UserDAO userDAO = UserDAO.getInstance();
 		int result = userDAO.save(user);
 		
 		// 5. 1일때, 1이 아닐때를 분기하여 1일때는 loginForm 페이지로 보내기, 1이 아니면 joinForm 페이지로 보내기
